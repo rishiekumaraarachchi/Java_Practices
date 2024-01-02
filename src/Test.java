@@ -6,7 +6,7 @@ public class Test {
         long d = 412545;
         float e = 5.0f;
         double f = 6.0;
-        char g = '7';
+        char g = '9';
         boolean h = true;
     }
 }
