@@ -11,7 +11,7 @@ public static void main(String[] args) {
 }
 
 class Calc{
-int add(int a, int b) {
+public int add(int a, int b) {
     return a + b;
 }
 }
