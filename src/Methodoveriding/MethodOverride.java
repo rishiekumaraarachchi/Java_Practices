@@ -19,5 +19,6 @@ public class MethodOverride {
     public static void main(String[] args) {
         Animal animal = new Dog(); // Polymorphism
         animal.makeSound(); // Calls the overridden method in Dog
+
     }
 }
