@@ -1,6 +1,6 @@
 package Exeptions;
 
-public class Demo {
+public class Throw {
     public static void main(String[] args) {
         int i = 20;
         int j = 0;
@@ -13,7 +13,7 @@ public class Demo {
 
             j = 18 / i;
 
-           
+
         } catch (ArithmeticException e) {
             System.out.println("Exeption" + e.getMessage());
         } catch (ArrayIndexOutOfBoundsException e) {
