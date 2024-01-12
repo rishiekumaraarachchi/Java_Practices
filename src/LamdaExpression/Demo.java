@@ -16,16 +16,18 @@ public class Demo {
 //                return a + b;
 //            }
 //        };
-
+//
 //        Calc calc = (int x, int y) -> {
 //            return x + y;
 //        };
-
+//
 //        Calc calc = (x, y) -> {
 //            return x + y;
 //        };
 
         Calc calc = (x, y) -> x + y;
         System.out.println(calc.add(a, b));
+
+
         }
     }
