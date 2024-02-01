@@ -14,6 +14,7 @@ public class Casting {
         System.out.println(b);
         int result = c++; // first assign then increment
         System.out.println(result);
+        System.out.println(c);
         int result2 = ++c; // first increment then assign
         System.out.println(result2);
 

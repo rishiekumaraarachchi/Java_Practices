@@ -2,24 +2,27 @@ package Constructor;
 
 public class Super {
     public static void main(String[] args) {
-        B b = new B(10);
+        B b = new B();
+        B b1 = new B(10);
     }
 
 }
 
 class A {
     public A() {
+
         System.out.println("Constructor");
     }
 
     public A(int a){
+
         System.out.println("Constructor int A");
     }
 }
 
 class B extends A {
     public B() {
-        super();
+        super(10);
         System.out.println("B Constructor");
     }
 
