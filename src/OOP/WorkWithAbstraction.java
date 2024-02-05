@@ -3,6 +3,9 @@ package OOP;
 abstract class Abstraction {
     public abstract double calculateArea();
     public abstract void draw();
+    void Write(){
+        System.out.println("Write");
+    }
 }
 
 class Circle extends Abstraction { // concrete class
@@ -23,10 +26,14 @@ class Circle extends Abstraction { // concrete class
     }
 }
 
-public class Main {
+public class WorkWithAbstraction {
     public static void main(String[] args) {
         Abstraction circle = new Circle(5);
-        System.out.println(circle.calculateArea());
+        double area = circle.calculateArea();
+        double roundedArea = Math.round(area * 100.0) / 100.0; // Round to two decimal places
+        System.out.println(roundedArea);
         circle.draw();
+        circle.Write();
+
     }
 }
