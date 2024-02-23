@@ -1,13 +1,11 @@
 package Collections;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Set;
+import java.util.*;
 
 public class Demo {
     public static void main(String[] args) {
-        Collection <Integer> nums = new ArrayList <Integer>();
+        Collection <Integer> nums;
+        nums = new ArrayList <>();
         nums.add(1);
         nums.add(2);
         nums.add(3);
@@ -18,15 +16,24 @@ public class Demo {
             System.out.println(num);
         }
 
-        Set <Integer> nums2 = new java.util.HashSet <Integer>();
+        Set <Integer> nums2;
+        nums2 = new HashSet<Integer>();
         nums2.add(1);
         nums2.add(2);
         nums2.add(3);
-        nums2.add(3);
+        nums2.add(4);
 
         for (int num: nums2) {
-            System.out.println(num);
+            System.out.print(num + " ");
         }
+
+        Map <String, Integer> nums3;
+        nums3 = new HashMap <>();
+        nums3.put("One", 1);
+        nums3.put("Two", 2);
+        nums3.put("Three", 3);
+
+        System.out.println(nums3.get("One"));
     }
 
 }

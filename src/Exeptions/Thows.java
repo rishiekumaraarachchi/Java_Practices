@@ -1,9 +1,7 @@
 package Exeptions;
 
 public class Thows {
-    static {
-        System.out.println("Static block");
-    }
+
 
     public static void main(String[] args) {
         A a = new A();
@@ -17,7 +15,7 @@ public class Thows {
     }
 }
 
-class A {
+class  A {
     public void show() throws ArithmeticException {
         System.out.println("Hello");
 
