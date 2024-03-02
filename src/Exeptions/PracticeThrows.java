@@ -1,8 +1,6 @@
 package Exeptions;
 
-public class Thows {
-
-
+public class PracticeThrows {
     public static void main(String[] args) {
         A a = new A();
         try {
@@ -11,6 +9,8 @@ public class Thows {
             System.out.println("Exception: " + e.getMessage());
         } finally {
             System.out.println("Bye");
+            // Code that is always executed, regardless of whether an exception is thrown or not
+            // Usually used for cleanup tasks or resource management
         }
     }
 }
